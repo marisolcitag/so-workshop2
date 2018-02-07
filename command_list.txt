@@ -1,0 +1,54 @@
+    1  echo "hola mari" > /dev/console
+    2  exit
+    3  ssh root@192.168.104.47
+    4  yum install git -y
+    5  clear
+    6  cd /tmp
+    7  git clone https://github.com/student_repository/so-workshop1.git
+    8  cd /tmo
+    9  git clone https://github.com/jonas/tig.git
+   10  cd tig
+   11  yum install gcc ncurses-devel ncurses -y
+   12  make
+   13  make install
+   14  tig
+   15  cd..
+   16  cd ..
+   17  ls
+   18  rm -rf  tig/
+   19  git clone https://github.com/marisolcitag/so-workshop2.git
+   20  cd so-workshop2/
+   21  tig
+   22  cd ..
+   23  ls
+   24  cd so-workshop2/
+   25  touch message_1.txt
+   26  git status
+   27  ls
+   28  git add message_1.txt 
+   29  git status
+   30  git reset message_1.txt 
+   31  git status
+   32  git branch
+   33  git branch A00246380/workshop2
+   34  git branch
+   35  git checkout -b A00246380/workshop2
+   36  git branch -D A00246380/workshop2
+   37  git branch
+   38  git checkout -b mgiraldo/workshop2
+   39  git branch
+   40  touch message_1.txt
+   41  git status
+   42  git add message_1.txt 
+   43  git status
+   44  git commit -m "Add message_1.txt"
+   45  git config --global user.name "Marisol"
+   46  git config --global user.email marisol.giraldo@correo.icesi.edu.co
+   47  gitstatus
+   48  git status
+   49  tig
+   50  cat .git/
+   51  ls
+   52  git push origin mgiraldo/workshop2
+   53  history
+   54  history> command_list.txt
